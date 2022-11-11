@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+
+html,
+body {
+  /*background-image: -webkit-linear-gradient(bottom left, rgba(0, 0, 255, .5), rgba(255, 0, 0, .75)), -webkit-linear-gradient(rgba(0, 0, 255, .25)100%, transparent);*/
+  /*background-image: linear-gradient(to top right, rgba(0, 0, 255, .5), rgba(255, 0, 0, .75)), linear-gradient(rgba(0, 0, 255, .25)100%, transparent);*/
+  /*background-image: -webkit-linear-gradient(bottom left, rgba(69, 90, 100, .9), rgba(0, 0, 0, .9)), -webkit-linear-gradient(rgba(0, 0, 0, .9)100%, transparent);*/
+  /*background-image: linear-gradient(to top right, rgba(69, 90, 100, .9), rgba(0, 0, 0, .9)), linear-gradient(rgba(0, 0, 0, .9)100%, transparent);*/
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#particle-slider {
+  width:100%;
+  height:30em;
+  margin:0 auto;
+  margin-top:0px;
+  padding:0;
+  overflow:hidden;
+  position:absolute;
+  top: -3em;
+  background-position: center top;
+  -webkit-backface-visibility:hidden;
+}
+
+
+/*morphing text's css*/
+.tagline {
+  text-align: center;
+  position: absolute;
+  margin-top: 7em;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  font-size: 2.7em;
+  /*border: 3px solid green;*/
+  user-select: none;
+  font-family: 'Space Mono', monospace;
+}
+
+
+/*social-icons*/
+.social-icons {
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  margin-left: -120px;
+}
+.social-icons a i{
+  font-size: 23px;
+}
+audio{
+  display: none;
+}
+.social-icons a {
+  float: left;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(1);
+  color: white;
+}
+.social-icons a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-icons a:hover{
+  animation: sclr .3s ease forwards;
+  color: white;
+}
